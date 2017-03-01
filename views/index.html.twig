@@ -14,14 +14,18 @@
                     <div class="col-md-6">
                         {%if courses is not empty%}
                             {%for course in courses%}
+                                <li>
                                 <a href="/course/{{course.getId}}">{{course.getCourseNumber}}</a>
+                                </li>
                             {%endfor%}
                         {%endif%}
                     </div>
                     <div class="col-md-6">
                         {%if students is not empty%}
                             {%for student in students%}
+                                <li>
                                 <a href="/student/{{student.getId}}">{{student.getStudentName}}</a>
+                                </li>
                             {%endfor%}
                         {%endif%}
                     </div>
